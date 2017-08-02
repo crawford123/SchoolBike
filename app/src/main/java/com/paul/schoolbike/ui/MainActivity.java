@@ -5,6 +5,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 
 import com.paul.schoolbike.R;
 import com.paul.schoolbike.adapter.TabFragmentAdapter;
@@ -34,6 +35,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void init() {
+        Log.d("test","schoolbike app launched");
         viewpager.setOffscreenPageLimit(4);//防止首页嵌套viewPager被回收
         List<String> tabList = new ArrayList<>();
         tabList.add("首页");
